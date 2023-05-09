@@ -6,7 +6,9 @@ project(
     LANGUAGES CXX
 )
 
-add_executable(${PROJECT_NAME} ./src/main.cpp)
+set(SOURCES ./src/main.cpp)
+
+add_executable(${PROJECT_NAME} ${SOURCES})
 
 target_compile_features(${PROJECT_NAME} PRIVATE cxx_std_17)
 
